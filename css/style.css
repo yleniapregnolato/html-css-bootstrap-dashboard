@@ -7,6 +7,10 @@
     padding-bottom: 150px;
 }
 
+.ms_padding-t {
+    padding-top: 60px;
+}
+
 .ms_fs-form {
     font-size: 13px;
 }
@@ -32,6 +36,10 @@
 
     .ms_fs-form {
         font-size: 10px;
+    }
+
+    .ms_padding-t {
+        padding-top: 10px;
     }
 }
 
