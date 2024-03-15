@@ -4,6 +4,12 @@
 }
 /* /utilities */
 
+/* container */
+.ms_bg-container {
+    background-color: #F8F9FA;
+}
+/* /container */
+
 /* table section */
 .ms_img-item {
     width: 50px;
