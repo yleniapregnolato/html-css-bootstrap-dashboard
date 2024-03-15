@@ -20,32 +20,34 @@
 </head>
 
 <body>
-    <!-- nav-bar -->
-    <nav class="navbar navbar-expand-md bg-dark d-md-none" data-bs-theme="dark">
-        <!-- Container -->
-        <div class="container">
-            <!-- logo -->
-            <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
-            <!-- logo -->
+    <header>
+        <!-- nav-bar -->
+        <nav class="navbar navbar-expand-md bg-dark d-md-none" data-bs-theme="dark">
+            <!-- Container -->
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
+                <!-- logo -->
 
-            <!-- Hamburger button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <!-- /Hamburger button -->
-        </div>
-        <!-- /Container -->
-    </nav>
-    <!-- /nav-bar -->
+                <!-- Hamburger button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- /Hamburger button -->
+            </div>
+            <!-- /Container -->
+        </nav>
+        <!-- /nav-bar -->
     </header>
 
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
             <div class="sidebar col-md-4 col-lg-3 collapse d-md-block bg-dark vh-100" id="navbarSupportedContent">
-                <a href="/" class="d-flex align-items-center justify-content-start mb-3 mb-md-0 me-md-auto text-white text-decoration-none pt-3">
+                <a href="/"
+                    class="d-flex align-items-center justify-content-start mb-3 mb-md-0 me-md-auto text-white text-decoration-none pt-3 d-none d-sm-block">
                     Bootstrap Dashboard
                 </a>
                 <hr class="text-white-50">
@@ -55,7 +57,7 @@
                             <svg class="bi pe-none me-2" width="16" height="16">
                                 <use xlink:href="#home"></use>
                             </svg>
-                            <i class="fa-solid fa-house text-white d-none d-md-inline pe-2"></i> 
+                            <i class="fa-solid fa-house text-white d-none d-md-inline pe-2"></i>
                             Dushboard
                         </a>
                     </li>
@@ -65,7 +67,7 @@
                                 <use xlink:href="#speedometer2"></use>
                             </svg>
                             <i class="fa-solid fa-arrow-trend-up text-white d-none d-md-inline pe-2"></i>
-                           Sponsorizzazione
+                            Sponsorizzazione
                         </a>
                     </li>
                     <li>
@@ -83,7 +85,7 @@
                                 <use xlink:href="#grid"></use>
                             </svg>
                             <i class="fa-solid fa-plus text-white d-none d-md-inline pe-2"></i>
-                           Nuovo prodotto
+                            Nuovo prodotto
                         </a>
                     </li>
                     <li>
@@ -143,7 +145,25 @@
 
             <!-- Main -->
             <main class="col-md-8 col-lg-9">
-               
+                <!-- button group -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6 d-flex align-items-center p-0">
+                            <h2 class="ms_font-size fw-bolder text-nowrap pt-3">10 prodotti trovati</h2>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                            <div class="btn-group pt-3" role="group" aria-label="Basic outlined example">
+                                <button type="button"
+                                    class="btn btn-outline-primary text-black-50 border-secondary ms-3">Esporta</button>
+                                <button type="button"
+                                    class="btn btn-outline-primary text-black-50 border-secondary">Nuovo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-secondary">
+                <!-- /button group -->
+
             </main>
             <!-- /Main -->
         </div>

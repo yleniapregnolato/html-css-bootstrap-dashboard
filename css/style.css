@@ -1,0 +1,18 @@
+/* utilities */
+.ms_font-size {
+    font-size: 18px;
+}
+/* /utilities */
+
+/* media query tablet */
+@media screen and (min-width: 768px) {
+    .ms_font-size {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .ms_font-size {
+        font-size: 40px;
+    }
+}
