@@ -21,7 +21,7 @@
 
 <body>
     <!-- nav-bar -->
-    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md bg-dark d-md-none" data-bs-theme="dark">
         <!-- Container -->
         <div class="container">
             <!-- logo -->
@@ -45,12 +45,10 @@
         <div class="row">
             <!-- Sidebar -->
             <div class="sidebar col-md-4 col-lg-3 collapse d-md-block bg-dark vh-100" id="navbarSupportedContent">
-                <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto  text-white text-decoration-none">
-                    <svg class="bi pe-none me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a> -->
-                <hr />
+                <a href="/" class="d-flex align-items-center justify-content-start mb-3 mb-md-0 me-md-auto text-white text-decoration-none pt-3">
+                    Bootstrap Dashboard
+                </a>
+                <hr class="text-white-50">
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
                         <a href="#" class="nav-link text-white-50 px-0" aria-current="page">
@@ -95,6 +93,31 @@
                             </svg>
                             <i class="fa-solid fa-user text-white d-none d-md-inline pe-2"></i>
                             Clienti
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link text-white-50 px-0 pt-5">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                            Impostazioni
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white-50 px-0">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#grid"></use>
+                            </svg>
+                            Profilo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white-50 px-0">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#people-circle"></use>
+                            </svg>
+                            Esci
                         </a>
                     </li>
                 </ul>
