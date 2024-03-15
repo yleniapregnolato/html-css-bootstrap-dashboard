@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- custom -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <header>
+        <!-- nav-bar -->
+        <nav class="navbar navbar-expand-md bg-dark d-md-none" data-bs-theme="dark">
+            <!-- Container -->
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
+                <!-- logo -->
+
+                <!-- Hamburger button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- /Hamburger button -->
+            </div>
+            <!-- /Container -->
+        </nav>
+        <!-- /nav-bar -->
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="sidebar col-md-4 col-lg-3 collapse d-md-block bg-dark" id="navbarSupportedContent">
+                <a href="/"
+                    class="d-flex align-items-center justify-content-start mb-3 mb-md-0 me-md-auto text-white text-decoration-none pt-3 d-none d-sm-block">
+                    Bootstrap Dashboard
+                </a>
+                <hr class="text-white-50">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white px-0" aria-current="page">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                            <i class="fa-solid fa-house text-white d-none d-md-inline pe-2"></i>
+                            Dushboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sponsorizzazione.html" class="nav-link text-white px-0">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            <i class="fa-solid fa-arrow-trend-up text-white d-none d-md-inline pe-2"></i>
+                            Sponsorizzazione
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="nav-link text-white px-0">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                            <i class="fa-solid fa-box-archive text-white d-none d-md-inline pe-2"></i>
+                            Prodotti
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nuovoprodotto.html" class="nav-link text-white px-0 active">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#grid"></use>
+                            </svg>
+                            <i class="fa-solid fa-plus text-white d-none d-md-inline pe-2"></i>
+                            Nuovo prodotto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white px-0">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#people-circle"></use>
+                            </svg>
+                            <i class="fa-solid fa-user text-white d-none d-md-inline pe-2"></i>
+                            Clienti
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link text-white px-0 pt-5">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                            Impostazioni
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white px-0">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#grid"></use>
+                            </svg>
+                            Profilo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white px-0">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#people-circle"></use>
+                            </svg>
+                            Esci
+                        </a>
+                    </li>
+                </ul>
+                <hr />
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                            class="rounded-circle me-2" />
+                        <strong>Mario Rossi</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main -->
+            <main class="col-md-8 col-lg-9">
+                <div class="container">
+                    <h2 class="text-center pt-5 pb-2">Crea nuovo prodotto</h2>
+                    <p class="text-center text-black-50">I campi contassegnati con un asterisco (*) sono obbligatori.
+                        <br> Le immagini devono essere in formato PNG e non devono superare i 4 MB di dimensione
+                    </p>
+
+                    <!-- form -->
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <form>
+                                <div class="mb-3">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-3">
+                                            <label for="exampleInputEmail1" class="form-label">Nome</label>
+                                        </div>
+                                        <div class="col-12 col-lg-6 flex-fill">
+                                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Samsung Galaxy 10">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-3">
+                                            <label for="exampleInputPassword1" class="form-label">Prezzo</label>
+                                        </div>
+                                        <div class="col-12 col-lg-6 flex-fill">
+                                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                                placeholder="99.00">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-3">Marca</div>
+                                    <div class="col-12 col-lg-6 flex-fill">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>--Seleziona--</option>
+                                            <option value="1">Samsung</option>
+                                            <option value="2">Apple</option>
+                                            <option value="3">Lg</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 pt-3">
+                                    <input type="text" class="form-control ms_padding-bt" id="exampleInputPassword1"
+                                        placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"
+                                        aria-label="descrizione">
+                                </div>
+
+
+                            </form>
+                            <!-- pagination section-->
+                            <nav aria-label="img selection">
+                                <ul class="pagination justify-content-center pb-2">
+                                    <li class="page-item disabled flex-fill">
+                                        <a class="page-link ms_fs-form">Scegli</a>
+                                    </li>
+                                    <li class="page-item flex-fill"><a class="page-link text-black ms_fs-form"
+                                            href="#">Nessun file
+                                            selezionato</a></li>
+                                    <li class="page-item disabled flex-fill">
+                                        <a class="page-link ms_fs-form">Immagine</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <nav aria-label="img selection">
+                                <ul class="pagination pb-2">
+                                    <li class="page-item disabled">
+                                        <a class="page-link ms_fs-form bg-white">Disponibile</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link text-black ms_fs-form text-black-50"
+                                            href="#">Esaurito</a></li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link ms_fs-form bg-white">Fuori Produzione</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link ms_fs-form bg-white">In arrivo</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- /pagination section-->
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <!-- check section -->
+                            <div class="border border-secondary-subtle rounded-top rounded-bottom">
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        fotocamera principale
+                                        <p class="ms_fs-form text-black-50">foto di alta qualità e registrare video
+                                            nitidi</p>
+                                    </label>
+                                </div>
+                                <hr class="border border-secondary-subtle">
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        schermoo OLED
+                                        <p class="ms_fs-form text-black-50">offre colori vividi per un'esperienza visiva
+                                            straordinaria</p>
+                                    </label>
+                                </div>
+                                <hr class="border border-secondary-subtle">
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        processore Octa-core
+                                        <p class="ms_fs-form text-black-50">prestazioni fluide e veloci per seguire le
+                                            applicazioni più esigenti</p>
+                                    </label>
+                                </div>
+                                <hr class="border border-secondary-subtle">
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        ricarica wireless
+                                        <p class="ms_fs-form text-black-50">consente di ricaricare lo smartphon
+                                            comodamente senza l'uso dei cavi</p>
+                                    </label>
+                                </div>
+                                <hr class="border border-secondary-subtle">
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        connessione 5G
+                                        <p class="ms_fs-form text-black-50">navigazione ultra veloce e streaming senza
+                                            interruzioni</p>
+                                    </label>
+                                </div>
+                                <hr class="border border-secondary-subtle">
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        tecnologia NFC
+                                        <p class="ms_fs-form text-black-50">per effettuare pagamenti senza contatto</p>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- /check section -->
+                        </div>
+                        <div class="pt-2 pb-2"><button type="submit" class="btn btn-primary">Salva</button></div>
+                    </div>
+                    <!-- /form -->
+                </div>
+            </main>
+            <!-- /Main -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
