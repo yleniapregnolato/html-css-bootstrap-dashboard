@@ -1,8 +1,4 @@
 /* utilities */
-.ms_font-size {
-    font-size: 18px;
-}
-
 .ms_padding-bt {
     padding-bottom: 150px;
 }
@@ -21,22 +17,8 @@
 /* /table section */
 /* media query tablet */
 @media screen and (min-width: 768px) {
-    .ms_font-size {
-        font-size: 30px;
-    }
-
-    .ms_fs-form {
-        font-size: 10px;
-    }
-
     .ms_padding-t {
         padding-top: 10px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .ms_font-size {
-        font-size: 40px;
     }
 }
 
